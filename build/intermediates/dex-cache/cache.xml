@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="73f497054569a62e8252364ccbb831192404b490">
+        <dex dex="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8fc681d9fc21fbbc2a74721a04a6ae0c3c8cbd30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/libs/commons-collections4-4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a4cf4688fe1c7e3a63aa636cc96d013af537768e">
+        <dex dex="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-collections4-4.1_ef3e9305fd2cea5e70ae67ee47c799451253d666/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b9d5b172e51ca0e362cf998fed824fcdb562281d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/libs/jackson-all-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9c011c6e816af0eb462770d92a278b728071d31">
+        <dex dex="/Users/joseph/Documents/IntellijWorkspace/sg_bus_bro/app/build/intermediates/transforms/dex/debug/folders/1000/2/jackson-all-1.9.0_bcf22d1593009840042637605ef3cc2f7777cf51/classes.dex" />
+    </item>
+
+</items>

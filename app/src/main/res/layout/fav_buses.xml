@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frl"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contentLayout"
+        android:background="@android:color/transparent">
+
+        <!--<TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@android:color/background_light"
+                android:text="Nearby 25"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/mainListView"
+        />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:ellipsize="start"
+            android:gravity="center_horizontal|left|fill"
+            android:hint="Search Buses"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/bgTitleLeft"
+            android:textSize="16dp"
+            android:nextFocusUp="@id/searchView"
+            android:nextFocusLeft="@id/searchView"
+            android:visibility="gone"/>
+
+        <include layout="@layout/search_layout" android:layout_width="match_parent" android:id="@+id/search_layout" android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/smartBusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:src="@drawable/smartlogo"
+                android:layout_gravity="left|fill_horizontal"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center|fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/bgBackSideColor"
+                android:textStyle="bold|italic"
+                android:layout_height="match_parent" android:text="Smart Bus Details"/>
+        </LinearLayout>
+
+        <ExpandableListView
+
+            android:id="@+id/favListView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none"
+            android:groupIndicator="@null"
+            tools:context=".listview.MainActivity"
+
+            >
+        </ExpandableListView>
+        <TextView
+            android:id="@+id/txtEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/fav_txt"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="0dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:elevation="0dp"
+        android:fadeScrollbars="false"
+        android:foregroundGravity="bottom|right|fill"
+        app:backgroundTint="@color/floatBtnRequest"
+        app:borderWidth="2dp"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:rippleColor="@color/floatBtnRequest"
+
+        android:src="@drawable/nearby"
+        app:useCompatPadding="true" />
+</FrameLayout>

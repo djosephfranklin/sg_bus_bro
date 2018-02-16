@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "113477982953",
+    "firebase_url": "https://busbro-f887a.firebaseio.com",
+    "project_id": "busbro-f887a",
+    "storage_bucket": "busbro-f887a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113477982953:android:118ec3a0bca7057d",
+        "android_client_info": {
+          "package_name": "com.busbro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113477982953-hbgjg10a2nremoqkhrqhu4h45l7q3rv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk25abe38aLggb5Z2y5Dbq4f2eSTFRbO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

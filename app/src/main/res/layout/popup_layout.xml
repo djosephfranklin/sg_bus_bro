@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uber="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/rounded_corner">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/from_head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:text="Description"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:uber="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/from_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_head_layout"
+        android:background="#ffffff">
+
+        <ListView
+            android:id="@+id/bus1Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a sample popup window."
+            android:layout_centerInParent="true"
+            android:paddingTop="0sp"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/to_head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/from_layout"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:id="@+id/to_secondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:text="Description"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:uber="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/to_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_layout"
+        android:background="#ffffff">
+
+        <ListView
+            android:id="@+id/bus2Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a sample popup window."
+            android:paddingTop="0sp"
+            android:background="#ffffff"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
